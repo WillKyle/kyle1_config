@@ -1,0 +1,18 @@
+spring:
+  profiles:
+    active: 
+    - dev
+
+---
+spring:
+  profiles: dev
+  application:
+    name: config-dev
+
+---
+spring:
+  profiles: sit
+  application:
+    name: config-sit
+
+#该文件需以utf-8编码保存
