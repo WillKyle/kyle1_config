@@ -2,9 +2,6 @@ spring:
   profiles:
     active:
     - dev
-  application:
-    name: consumer
-    version: v1
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: org.gjt.mm.mysql.Driver
@@ -49,7 +46,10 @@ pagehelper:
 ---
 spring:
   profiles: dev
-  
+  application:
+    name: consumer_dev
+    version: v1
+    
 server:
   port: 9001
 
@@ -61,7 +61,10 @@ eureka:
 ---
 spring:
   profiles: sit
-  
+  application:
+    name: consumer_sit
+    version: v1
+      
 server:
   port: 9002
 
