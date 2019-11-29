@@ -1,6 +1,6 @@
 server:
   port: 8802
-  time: update version100
+  time: update 99999999
 
 spring:
   application:
